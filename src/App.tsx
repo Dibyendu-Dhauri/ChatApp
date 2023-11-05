@@ -48,7 +48,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col  p-4 relative ">
+    <div className="flex flex-col  p-4 relative h-screen " >
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <img src={icon} alt="previous" className="w-4 h-4" />
@@ -73,8 +73,8 @@ function App() {
       </div>
 
       <div
-        className="flex  flex-col  mt-8 overflow-y-auto h-[850px] "
-        onScrollCapture={(e) => handleScroll(e)}
+        className="flex  flex-col  mt-8 overflow-y-auto h-full " onScrollCapture={(e) => handleScroll(e)}
+        
       >
         {data?.map((item) => (
           <div
